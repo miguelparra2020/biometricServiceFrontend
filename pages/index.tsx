@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -81,14 +82,16 @@ export default function Home() {
             </div>
 
             <div>
+              <Link href="/dashboard_administrador">
               <button
                 type="submit"
                 className="group relative flex w-full justify-center rounded-md bg-orange-600 py-2 px-3 text-sm font-semibold text-white hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                 </span>
-                Ingresar
+                Ingresar a la plataforma
               </button>
+              </Link>
             </div>
           </form>
         </div>
